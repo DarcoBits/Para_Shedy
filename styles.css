@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('back2.gif'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la URL o la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6); /* Añade un fondo semi-transparente para mejorar la legibilidad del texto */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #respuesta {
+    margin-top: 20px;
+  }
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu & Yo 💞</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Great Vibes', cursive;
+      height: 100vh;
+      overflow: hidden; /* Para ocultar el desbordamiento del video */
+    }
+
+    video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      z-index: -1; /* Coloca el video detrás de los demás elementos */
+    }
+
+    audio {
+      display: none; /* Oculta el reproductor de audio */
+    }
+
+    .contenido {
+      position: relative;
+      z-index: 1; /* Asegura que el contenido esté por encima del video */
+      text-align: center;
+      padding-top: 20vh;
+    }
+
+    .titulo {
+      font-size: 3.5vw;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .slick-carousel {
+      margin-top: 10vh;
+    }
+
+    .slick-slide img {
+      width: 90%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    /* Media query para dispositivos más pequeños como el iPhone 11 Pro */
+    @media only screen and (max-width: 414px) {
+      .titulo {
+        font-size: 8vw;
+      }
+
+      .slick-slide img {
+        width: 90%;
+        max-width: 250px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Video de fondo -->
+  <video autoplay loop muted>
+    <source src="video.mp4" type="video/mp4"> <!-- Reemplaza 'tu_video.mp4' con la ruta de tu video -->
+  </video>
+
+  <!-- Canción de fondo -->
+  <audio autoplay loop>
+    <source src="amor.mp3" type="audio/mp3"> <!-- Reemplaza 'cancion.mp3' con la ruta de tu canción -->
+  </audio>
+
+  <div class="contenido">
+    <!-- Título -->
+    <h1 class="titulo">Por más experiencias juntos 💙</h1>
+  </div>
+
+  <!-- Carrusel de imágenes -->
+  <div class="slick-carousel">
+    <div><img src="photo1.jpg" alt="Imagen 1"></div>
+    <div><img src="photo2.jpg" alt="Imagen 2"></div>
+    <div><img src="photo3.jpg" alt="Imagen 3"></div>
+    <div><img src="photo4.jpg" alt="Imagen 4"></div>
+    <div><img src="photo5.jpg" alt="Imagen 5"></div>
+    <div><img src="photo6.jpg" alt="Imagen 6"></div>
+    <div><img src="photo7.jpg" alt="Imagen 7"></div>
+    <div><img src="photo8.jpg" alt="Imagen 8"></div>
+    <div><img src="photo9.jpg" alt="Imagen 9"></div>
+    <!-- Agrega más imágenes según sea necesario -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slick-carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    });
+  </script>
+</body>
+</html>
