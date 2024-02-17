@@ -14,4 +14,7 @@ function mostrarRespuesta() {
   function aceptar() {
     window.location.href = 'acepto.html';
   }
-  
+    function reproducirAudio() {
+    const audio = document.querySelector('audio');
+    audio.play();
+}
