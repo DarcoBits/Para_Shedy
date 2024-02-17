@@ -30,16 +30,35 @@ body {
   
   button {
     padding: 10px 20px;
-    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+button:hover {
+    opacity: 0.9; /* Reducir la opacidad ligeramente al pasar el ratón para indicar interactividad */
+}
+
+/* Estilo específico para el botón "Sí, quiero 💕" */
+button.yesButton {
+    background-color: #FF69B4;
+}
+
+/* Estilo específico para el botón "No💔" */
+button.noButton {
+    background-color: #FF6347;
+}
+
+/* Estilo específico para el botón "▶Play Music" */
+button.playButton {
+    background-color: #1E90FF;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+}
+
   
   #respuesta {
     margin-top: 20px;
